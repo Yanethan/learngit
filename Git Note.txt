@@ -1,0 +1,16 @@
+learn git
+
+1.创建一个版本库非常简单，首先，选择一个合适的地方，创建一个空目录：
+$ mkdir learngit
+$ cd learngit
+$ pwd
+/Users/michael/learngit
+pwd命令用于显示当前目录。
+
+2.通过 git init 命令将这个目录变成git可以管理的仓库：
+$ git init
+Initialized empty Git repository in /Users/michael/learngit/.git/
+.git 目录为隐藏目录，用 ls -ah 命令可以看见。
+
+3.利用 $ git add 与文件名称  命令可以将文件添加到仓库，
+接下来用 git commit -m "zhongjiantianjaibeizhu"命令可以查看文件状态
