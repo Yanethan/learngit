@@ -20,3 +20,7 @@ Initialized empty Git repository in /Users/michael/learngit/.git/
 5.git log 用于查看修改文件的日志
 $ git log --pretty=oneline，这个参数用于显示版本ID与近三次修改：最近一次
 修改为append GPL，上一次修改是add distributed,最早一次修改是wrote a readme file
+
+6.版本回退方式：
+    （1）.git reset --hard HEAD^
+    
