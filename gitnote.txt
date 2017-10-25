@@ -29,3 +29,25 @@ $ git log --pretty=oneline，这个参数用于显示版本ID与近三次修改�
 7.撤销修改 git checkout -- file
 
 8. rm + 文件名 删除文件
+
+9.创建分支 git checkout -b + 分支名称，-b表示创建并切换，相当于git branch+git checkout
+使用git branch 命令查看当前分支
+
+10.git stash 命令用于暂时存放当前状态文件，
+    用git stash list 命令可以查看当前以存放列表
+    用git stash apply 恢复存放文件，stash文件不删除
+    用git stash pop 恢复文件同时删除stash文件
+    也可以多次git stash后，使用先用git stash list查看，git stash apply stash@{0}恢复
+
+11.打标签 git tag + 标签名（为最近一次commit打标签）
+    为以前的提交打标签需 commit_id,打标签格式 git tag +标签名  +commit_id
+    git tag命令可查看标签名
+    git show +tagname查看标签信息
+    命令git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+    git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+    git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
+    命令git tag可以查看所有标签。
+    命令git push origin <tagname>可以推送一个本地标签；
+    命令git push origin --tags可以推送全部未推送过的本地标签；
+    命令git tag -d <tagname>可以删除一个本地标签；
+    命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
